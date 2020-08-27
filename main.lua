@@ -1,7 +1,9 @@
 local PlayerName = game.Players.LocalPlayer.Name;
 
 function Coins()
-    
+    for i,v in pairs(game:GetService("Workspace").Coins:GetChildren()) do
+        
+    end
 end
 
 function Gamepasses()
@@ -19,7 +21,8 @@ function Portals()
 end
 
 function Main()
-    
+    Gamepasses();
+    Portals();
 end
 
 Main()
