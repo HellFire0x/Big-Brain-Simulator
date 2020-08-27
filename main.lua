@@ -12,7 +12,10 @@ function Gamepasses()
 end
 
 function Portals()
-    
+    for i,v in pairs(game:GetService("Players")[PlayerName].Portals:GetChildren()) do
+        v.Value = true;
+        print("Portals: "..v.Name.." Value: "..tostring(v.Value))
+    end
 end
 
 function Main()
