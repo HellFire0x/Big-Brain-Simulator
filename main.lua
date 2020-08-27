@@ -1,15 +1,20 @@
+--Settings :
+_G.DeleteCoinAnymation = false; -- [if you turn on it will break game script [true\false]]
+_G.DisableCoins = true;
+--Locals :
 local PlayerName = game.Players.LocalPlayer.Name;
-
+--Scripts :
 function DeleteStuff()
-    game:GetService("Players")[PlayerName].PlayerGui.MainGui.Effects:Destroy()
+    if _G.DeleteCoinAnymation == true then
+        game:GetService("Players")[PlayerName].PlayerGui.MainGui.Effects:Destroy();       
+    end
 end
 
 function Coins()
     for i,v in pairs(game:GetService("Workspace").Coins:GetChildren()) do
         for inv,val in pairs(v:GetChildren()) do
             if val.Name == "Coin" then
-                val.CFrame = game.Workspace[PlayerName].HumanoidRootPart.CFrame
-                firetouchinterest(game.Workspace[PlayerName].HumanoidRootPart, game:GetService("Workspace").Coins[v.Name][val.Name], 0)
+                firetouchinterest(game.Workspace[PlayerName].HumanoidRootPart, game:GetService("Workspace").Coins[v.Name][val.Name], 0);
             end
         end
     end
@@ -30,13 +35,14 @@ function Portals()
 end
 
 function Main()
-    pcall(DeleteStuff)
+    pcall(DeleteStuff);
     Gamepasses();
     Portals();
-    while wait() do
-        pcall(Coins)
+    if _G.DisableCoins == false then
+        while wait() do
+            pcall(Coins);
+        end
     end
-
 end
 
 Main()
