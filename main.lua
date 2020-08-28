@@ -1,14 +1,21 @@
 
 --[[
-    Made By HellFire0x
-    Script as of [8/27/2020]
+    [Information]:
+        Made By HellFire0x
+        Script as of [8/27/2020]
 ]]
 
---Settings :
-_G.DeleteCoinAnymation = false; -- [if you turn on it will break game script [true\false]]
+--[[
+    [Settings]:
+        _G.DeleteCoinAnymation [false/true] | Info: if you turn on it will break a game script | normal: false
+        _G.DisableCoins [false/true] | normal: true
+]]
+_G.DeleteCoinAnymation = false;
 _G.DisableCoins = true;
+
 --Locals :
 local PlayerName = game.Players.LocalPlayer.Name;
+
 --Scripts :
 function DeleteStuff()
     if _G.DeleteCoinAnymation == true then
