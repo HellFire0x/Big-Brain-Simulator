@@ -1,7 +1,9 @@
 
 --[[
-Made By HellFire0x
+    Made By HellFire0x
+    Script as of [8/27/2020]
 ]]
+
 --Settings :
 _G.DeleteCoinAnymation = false; -- [if you turn on it will break game script [true\false]]
 _G.DisableCoins = true;
