@@ -5,6 +5,7 @@ https://www.roblox.com/games/4893679160/
 
 Exploit | Support Script
 ------------ | -------------
+Fluxus | True
 Synapse X | True
 Sentinel | True
 Protosmasher | True
