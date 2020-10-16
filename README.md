@@ -1,7 +1,7 @@
 # Big-Brain-Simulator
 https://www.roblox.com/games/4893679160/
 
-### exploits
+### Exploits Support
 
 Exploit | Support Script
 ------------ | -------------
