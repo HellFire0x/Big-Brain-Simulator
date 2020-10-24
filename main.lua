@@ -8,15 +8,15 @@
         _G.DeleteCoinAnymation [false/true] | Info: if you turn on it will break a game script | normal: false
         _G.DisableCoins [false/true] | normal: true
 ]]
-_G.DeleteCoinAnymation = false
-_G.DisableCoins = true
+getgenv().DeleteCoinAnymation = false
+getgenv().DisableCoins = true
 
 --Locals :
 local PlayerName = game.Players.LocalPlayer.Name
 
 --Scripts :
 function DeleteStuff()
-    if _G.DeleteCoinAnymation == true then
+    if getgenv().DeleteCoinAnymation == true then
         game:GetService("Players")[PlayerName].PlayerGui.MainGui.Effects:Destroy()
     end
 end
@@ -53,7 +53,7 @@ function Main()
     pcall(DeleteStuff)
     Gamepasses()
     Portals()
-    if _G.DisableCoins == false then
+    if getgenv().DisableCoins == false then
         while wait() do
             pcall(Coins)
         end
