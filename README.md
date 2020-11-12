@@ -1,5 +1,4 @@
 # Big-Brain-Simulator
-https://www.roblox.com/games/4893679160/
 
 This script is for Big Brain Simulator. It gives you all the game passes, Portals, and it also farms coins. It has 2 options: one to delete coins and one to delete coin animation. There is a function that also gets you all the coins.
 
